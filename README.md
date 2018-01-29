@@ -1,8 +1,13 @@
 # BaseAdapter
+<u>首先感谢鸿洋提供的思路</u>
+
+***
+
 封装了RecyclerView和ListView的Adapter填充数据更方便
 此项目中有源码和示例
 
-## 知识点
+# 知识点
+***
 
 ### RecyclerView
 * 1.SparseArray
@@ -12,7 +17,7 @@
 SparseArray存储数据占用的内存空间确实比HashMap要小一些
 
 * 2.多条目数据类型
-* 3.定义OnItemClickListener接口实现了条目点击和***条目中子view***的点击
+* 3.定义OnItemClickListener接口实现了条目点击和**条目中子view**的点击
 
 ### ListView
 <mark>注意</mark>:多条目时必须复写getViewTypeCount方法
