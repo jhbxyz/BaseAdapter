@@ -1,0 +1,2 @@
+# BaseAdapter
+封装了RecyclerView和ListView的Adapter填充数据更方便
