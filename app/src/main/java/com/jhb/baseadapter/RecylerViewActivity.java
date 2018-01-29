@@ -23,7 +23,7 @@ public class RecylerViewActivity extends AppCompatActivity {
 
         for (int i = 0; i < 100; i++) {
             if (i % 5 == 0) {
-                messageBeans.add(new MessageBean("标题 - " + i, MyRvAdaprer.TYPE_TITLE));
+                messageBeans.add(new MessageBean("标题RecyclerView - " + i, MyRvAdaprer.TYPE_TITLE));
             } else {
                 messageBeans.add(new MessageBean("ITEM - " + i, MyRvAdaprer.TYPE_CONTENT));
             }
