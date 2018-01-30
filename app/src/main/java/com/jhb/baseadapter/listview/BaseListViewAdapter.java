@@ -15,13 +15,17 @@ public abstract class BaseListViewAdapter<T> extends BaseAdapter {
     public List<T> dataList;
     public int itemTypeCount = 1;
 
+    public BaseListViewAdapter(List<T> dataList) {
+        this.dataList = dataList;
+    }
+
     /**
      * @param dataList      数据
      * @param itemTypeCount 条目类型的个数
      */
     public BaseListViewAdapter(List<T> dataList, int itemTypeCount) {
         if (itemTypeCount < 1) {
-            throw new Error("itemTypeCount must >= 1");
+            throw new RuntimeException("itemTypeCount must >= 1");
         }
         this.dataList = dataList;
         this.itemTypeCount = itemTypeCount;
